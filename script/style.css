@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gameboard {
+    width: 100%;
+    height: 970px;
+    border-bottom: 15px solid rgb(64, 231, 23);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgb(108, 164, 190), white);
+}
+
+.pipe {
+    position: absolute;
+    width: 80px;
+    bottom: 0;
+    animation: pipe-animation 2s infinite linear;
+}
+
+#mov{
+    animation: pipe-ini 100000s infinite linear;
+}
+
+.mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.nuvens{
+    width: 400px;
+    height: 250px;
+    margin-left: 0;
+    margin-top: 100px;
+    animation: clouds 15s infinite linear;
+    position: absolute;
+}
+
+.nuvens2{
+    width: 315px;
+    height: 122px;
+    margin-left: 156px;
+    margin-top: -3px;
+    margin-bottom: -177px;
+}
+
+.nuvens3{
+    width: 311px;
+    height: 126px;
+    margin-left: 1220px;
+    margin-top: 413px;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+.endGame{
+    display: none;
+    margin: 0 auto;
+    margin-top: -180px;
+}
+
+.start{
+    border: 0;
+    background: none;
+    margin-top: -563px;
+    margin-left: 806px;
+    position: absolute;
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes pipe-ini {
+    from {
+        right: -0px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+    40%{
+        bottom: 200px;
+    }
+    50% {
+        bottom: 200px;
+    }
+    60% {
+        bottom: 200px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes clouds {
+
+    to{
+        left: -400px;
+    }
+
+    from{
+        left: 100%;
+    }   
+}
