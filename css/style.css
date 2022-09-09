@@ -66,6 +66,7 @@
     display: none;
     margin: 0 auto;
     margin-top: -180px;
+    cursor: pointer;
 }
 
 .start{
@@ -74,6 +75,7 @@
     margin-top: -563px;
     margin-left: 806px;
     position: absolute;
+    cursor: pointer;
 }
 
 @keyframes pipe-animation {
